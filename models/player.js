@@ -2,7 +2,7 @@
 
 const mongoose = require('mongoose');
 
-var userPlayerSchema = new mongoose.Schema({
+var playerSchema = new mongoose.Schema({
   name:        String,
   image_url:   String,
   team:        String,
@@ -12,7 +12,7 @@ var userPlayerSchema = new mongoose.Schema({
   win_status:  Boolean
 });
 
-module.exports = mongoose.model('Player', userPlayerSchema);
+module.exports = mongoose.model('Player', playerSchema);
 
 module.exports.scoreUpdate = function(roll, lastRoll) {
   Survey.findById(id, function(err, survey) {
