@@ -1,0 +1,215 @@
+html,body {
+  background: none;
+  background-image: none;
+  background-color: none;
+  color: none;
+}
+
+.ng-scope {
+  background: url('http://7-themes.com/data_images/out/12/6809626-simple-backgrounds.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: stretch;
+  background-attachment: fixed;
+  position: relative;
+  z-index: +1000;
+}
+
+.gameboard {
+
+}
+
+h1 {
+  color: #b48608;
+  font-family: 'Droid serif', serif;
+  font-size: 36px;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 44px;
+  margin: 0 0 12px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 14px;
+  color: red;
+  font:;
+  margin:0px;
+  text-align: center;
+  border: solid brown 3px;
+  border-bottom: none;
+}
+
+h3 {
+  font-size: 8px;
+  color: blue;
+  font:;
+  margin: 0px;
+  padding:;
+  border: solid red 3px;
+}
+
+h4 {
+  size: 20;
+  color: pink;
+  font:;
+  margin:;
+  padding:;
+}
+
+h5 {
+  text-align: center;
+  color: white;
+  font-size: 16px;
+  font-style: oblique;
+  font-weight: bold;
+  font-variant: small-caps;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 14px;
+  color: gold;
+  font:;
+  margin:;
+  padding:;
+}
+
+article {
+  background: silver;
+  opacity: .7;
+  border: 2px solid silver;
+  border-radius: 10px;
+  padding: 10px;
+  position: 80px;
+  color: rgba(220, 255, 10, 1);
+  font-size: 10px;
+  margin-bottom: 15px;
+  z-index: -5000;
+  overflow-y: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+.player {
+  position: relative;
+}
+
+.score {
+  border-bottom: ;
+  padding: 2px;
+}
+
+.lastRoll {
+  border-top: none;
+  padding: 2px;
+}
+
+.roll { position: }
+
+#roundInit {
+  font-size: 8px;
+  width: 60px;
+  background-color: rgba(120, 155, 155, 0.3);
+  border-radius: 10px;
+  border-style: outset;
+  position: relative;
+  top: 165px;
+  left: 210px;
+  z-index: +1000;
+  align-items: center;
+}
+
+#roundInit:hover {
+  background-color: rgba(020, 220, 0, 0.5);
+}
+
+#roundInit:active {
+  background-color: #F00F0F;
+  border-style: inset;
+}
+
+#cop1 {
+  top: 75px;
+  left: 190px;
+  margin: 0px;
+  margin: 0px;
+  position: absolute;
+}
+
+#robber1 {
+   top: 180px;
+   left: 360px;
+   position: absolute;
+   width: 70px;
+ }
+
+#cop2 {
+  top: 300px;
+  left: 190px;
+  position: absolute;
+}
+
+#robber2 {
+  top: 180px;
+  left: 20px;
+  position: absolute;
+}
+
+#cop1 img {
+  width: 45px;
+  padding-left: 25px;
+}
+
+#cop2 img {
+  width: 45px;
+  padding-left: 25px;
+}
+
+#robber1 img {
+  width: 45px;
+  left: 51px;
+}
+
+#robber2 img {
+  width: 45px;
+  padding-left: 50px;
+}
+
+#table img{
+  position: absolute;
+  width: 160px;
+  left: 200px;
+  top: 260px;
+}
+
+#copsToRobber {}
+
+#feed-box {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 400px;
+  width: 300px;
+  float: right;
+  top: 100px;
+  right: 400px;
+  z-index: 2000;
+}
+
+#feed-box ul {
+  list-style: none;
+}
+
+#feed-box li {
+  padding-top: 30px;
+}
+
+#rules {
+  margin: 10px;
+  position: absolute;
+  top: 500px;
+  position: ;
+  z-index: -1000;
+}

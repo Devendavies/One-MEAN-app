@@ -35,4 +35,13 @@
 ##### - Game (owns all users, controls flow)
 ##### - Player (User directed, holds personal attributes)
 ##### - Computers (Autonomous, timer based, otherwise same as player)
-##### 
+#####
+
+## NOTES:
+###### - User forced as cop 1 (optional choice to be added later)
+###### - Add functionality to activity feed-box
+###### - Add "cops chasing robbers to river" imagery.
+###### - Add Die roll conditional images
+###### - Add a table image that isn't SO WEAK
+###### - Chat functionality? (not pertinent without users)
+###### - Giphs on win?

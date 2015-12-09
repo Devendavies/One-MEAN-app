@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 const app = express();
 
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:12345'); // Suppose to be different from server listener?
+mongoose.connect('mongodb://localhost:27017/copsAndRobbers'); // Suppose to be different from server listener?
 
 /* check if connected to mongoose */
 let db = mongoose.connection;

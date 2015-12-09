@@ -3,9 +3,84 @@
   <head>
     <meta charset="utf-8">
     <title> Cops'n'Robbers </title>
+
+    <link href="css/style.css" rel="stylesheet">
+    <link href="scripts/angular-material/angular-material.css" rel="stylesheet">
+    <script type="https://cdnjs.cloudflare.com/ajax/libs/jquery3.0.0-alpha1/jquery.js"></script>
     <script src="scripts/angular/angular.js"></script>
+    <script src="scripts/angular-material/angular-material.js"></script>
+    <script src="js/app.js" type="text/javascript"></script>
+    <script src="js/playersController.js"></script>
+    <script src="js/playerView.js"></script>
+    <script src=""></script>
+
+
+    </script>
   </head>
+
   <body>
+
+    <h1> Cops and Robbers </h1>
+
+    <section ng-controller="PlayersController as players">
+
+      <ul id="players">
+        <div ng-repeat="player in players.all ">
+          <li>
+            <player image="{{ player.image }}" name ="{{ player.name  }}" score="{{ player.score }}"></player>
+          </li>
+        </div>
+
+        <button id="roundInit"> Roll! </button>
+
+      </ul>
+
+    </section>
+        <h9> {{ game.round }} </h9>
+
+    <!-- Value Shifting action feed -->
+    <div id="feed-box">
+      <ul>
+        <li id="feed7">7</li>
+        <li id="feed6">6</li>
+        <li id="feed5">5</li>
+        <li id="feed4">4</li>
+        <li id="feed3">3</li>
+        <li id="feed2">2</li>
+        <li id="feed1">1</li>
+      </ul>
+    </div>
+
+
+    <div id="table"> <image src="./images/tabletop.png" alt="table"/></div>
+
+    <div id="rules">
+      <article>
+        <h5> Rules </h5>
+        <a>-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------<a>
+        Two players are robbers trying to escape justice, while two are police constables trying to
+catch the robbers. For 4 players (playing in teams, two robbers versus two cops). You
+need one die each, and paper and pencil.
+Aim of the game: The robbers win if one or both can get down to 0 before being caught
+by the cops; and the cops win if they catch both robbers before then.
+How to play: The players sit around the table in the order cop-robber-cop-robber. One
+player keeps score: One of the robbers starts with 64 points and the other with 66
+points, while both cops start with 75 points each.
+ Roll one die each: Highest makes the first ”move”, deducting as many points from his
+score as the number he rolled. The next roll is made by the robber to the first player’s
+left, the next roll again by the cop to the left of the second player, and finally the fourth
+player rolls. From then on, you play in clockwise order.
+ The number you roll is deducted from your score, so that you have fewer and fewer
+points left as the game progresses. A few extra rules are in effect (but only from the
+second player round on, not during the initial round): If you roll a 6, you immediately reroll
+and deduct one point if you roll 1, 2 or 3, or two points if you roll 4, 5 or 6. If you roll
+a 5 in your turn (on your initial roll, not on any re-roll), the player on your left must skip
+his turn. If you roll a 4, both the nearest two players on your left miss their turn; and if
+you roll the same number as the preceding player (not counting any re-rolls), your throw
+does not count and is not deducted from your score.
+ If a cop catches a robber (= the same number of points or lower), that robber is out
+of the game while the other continues to try to reach 0. If either robber escapes then they win, or else justice prevails once more!</article>
+    </div>
 
   </body>
 </html>
