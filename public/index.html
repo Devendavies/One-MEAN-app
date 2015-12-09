@@ -14,7 +14,16 @@
     <script src="js/playerView.js"></script>
     <script src=""></script>
 
-
+    <!-- Is this where click events should go? -->
+    <script>
+      $('#button').click(function(){
+        if (turn == 0){ $('.button').click(function(){
+          firstRound();
+        });
+      } else if (turn != 1){ $('.button').click(function(){
+          normalRound();
+        });
+      }
     </script>
   </head>
 
@@ -37,6 +46,10 @@
 
     </section>
         <h9> {{ game.round }} </h9>
+        <button id="button1"></button>
+        <button id="button2"></button>
+        <button id="button3"></button>
+        <button id="button4"></button>
 
     <!-- Value Shifting action feed -->
     <div id="feed-box">
