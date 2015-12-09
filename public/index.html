@@ -6,7 +6,7 @@
 
     <link href="css/style.css" rel="stylesheet">
     <link href="scripts/angular-material/angular-material.css" rel="stylesheet">
-    <script type="https://cdnjs.cloudflare.com/ajax/libs/jquery3.0.0-alpha1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery3.0.0-alpha1/jquery.js"></script>
     <script src="scripts/angular/angular.js"></script>
     <script src="scripts/angular-material/angular-material.js"></script>
     <script src="js/app.js" type="text/javascript"></script>
@@ -18,12 +18,13 @@
     <script>
       $('#button').click(function(){
         if (turn == 0){ $('.button').click(function(){
-          firstRound();
-        });
-      } else if (turn != 1){ $('.button').click(function(){
-          normalRound();
-        });
-      }
+            firstRound();
+          });
+        } else if (turn != 1){ $('.button').click(function(){
+            normalRound();
+          })
+        }
+      });
     </script>
   </head>
 
@@ -46,10 +47,12 @@
 
     </section>
         <h9> {{ game.round }} </h9>
-        <button id="button1"></button>
-        <button id="button2"></button>
-        <button id="button3"></button>
-        <button id="button4"></button>
+      <div class="turn-butts">
+        <button id="button1"> cop1 </button>
+        <button id="button2"> rob1 </button>
+        <button id="button3"> cop2 </button>
+        <button id="button4"> rob2 </button>
+      </div>
 
     <!-- Value Shifting action feed -->
     <div id="feed-box">

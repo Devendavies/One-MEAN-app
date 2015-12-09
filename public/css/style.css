@@ -144,7 +144,6 @@ ul {
    top: 180px;
    left: 360px;
    position: absolute;
-   width: 70px;
  }
 
 #cop2 {
@@ -170,13 +169,14 @@ ul {
 }
 
 #robber1 img {
+  padding-left: 25px;
   width: 45px;
   left: 51px;
 }
 
 #robber2 img {
   width: 45px;
-  padding-left: 50px;
+  padding-left: 25px;
 }
 
 #table img{
@@ -212,4 +212,10 @@ ul {
   top: 500px;
   position: ;
   z-index: -1000;
+}
+
+.turn-butts button {
+  font-size: 8px;
+  width: 40px;
+  height: 15px;
 }

@@ -38,10 +38,18 @@
 #####
 
 ## NOTES:
+###### - ! Add seeding file for game/db restart/reset
+###### - ! Add functionality to activity feed-box
 ###### - User forced as cop 1 (optional choice to be added later)
-###### - Add functionality to activity feed-box
 ###### - Add "cops chasing robbers to river" imagery.
 ###### - Add Die roll conditional images
 ###### - Add a table image that isn't SO WEAK
 ###### - Chat functionality? (not pertinent without users)
-###### - Giphs on win?
+###### - Giphs on (ft)win?
+
+
+#### Q's
+###### - Where do click events go? (currently in [index.html])
+###### - Do models need to be explicit? (aka this.roll [Game model])
+###### -
+######
